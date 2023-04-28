@@ -6,7 +6,7 @@ def get_protection_key():
     protection_user_key = get_user_key()
 
     while not is_valid_protection_key_input(protection_user_key):
-        print("Key should have length 4 or more symbols")
+        print("Key should have 4 symbols at least")
         protection_user_key = get_user_key()
 
     key = convert_protection_key_to_base64_format(protection_user_key)
